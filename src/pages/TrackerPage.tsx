@@ -17,9 +17,9 @@ export default function FoodTracker() {
   const [items, setItems] = useState<FoodItem[]>([]);
   const categories = ["Main Course", "Drink", "Dessert"];
 
-  const handleDelete =(id: string) =>{
+  const handleDelete =() =>{
 
-    setItems(items.filter((item) => item.id !==id))
+    setItems([]);
   };
 
 
