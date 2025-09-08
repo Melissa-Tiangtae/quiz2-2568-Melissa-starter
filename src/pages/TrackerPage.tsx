@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Button, Stack, Title, Divider, Container ,Text} from "@mantine/core";
 import { v4 as uuidv4 } from "uuid";
 import AddFoodModal from "../components/Modal";
@@ -15,7 +15,7 @@ type FoodItem = {
 export default function FoodTracker() {
   const [opened, setOpened] = useState(false);
   const [items, setItems] = useState<FoodItem[]>([]);
-  const categories = ["Main Course", "Drink", "Dessert"];
+//  const categories = ["Main Course", "Drink", "Dessert"];
 
   const handleDelete =() =>{
 
