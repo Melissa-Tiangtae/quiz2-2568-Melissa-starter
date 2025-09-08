@@ -56,7 +56,7 @@ export default function AddFoodModal({opened,onClose,onAdd}: AddFoodModalProps) 
       withAsterisk
       description="Name of item"
       error={!name.trim() && "This is required"}
-      placeholder="Input placeholder"
+      placeholder="e.g Chicken rice"
       value  ={name}
       onChange={(event)=> setName(event.currentTarget.value)}
     />
