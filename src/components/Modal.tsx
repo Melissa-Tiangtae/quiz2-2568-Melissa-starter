@@ -66,7 +66,7 @@ export default function AddFoodModal({opened,onClose,onAdd}: AddFoodModalProps) 
           label="Price per dish"
           withAsterisk
           description="Price per dish"
-          error={(!price || Number(price) <= 0) && "Price per dish is required"}
+          error={(!price ) && "Price per dish is required"}
           placeholder="0"
           value={price}
           onChange={(value) => setPrice(value)}
@@ -78,7 +78,7 @@ export default function AddFoodModal({opened,onClose,onAdd}: AddFoodModalProps) 
           label="Quantity"
           withAsterisk
           description="Quantity"
-          error={(!quantity || Number(quantity) <= 0) && "quantity is required"}
+          error={(!quantity ) && "quantity is required"}
           placeholder="0"
           value={quantity}
           onChange={(value) => setQuantity(value)}
